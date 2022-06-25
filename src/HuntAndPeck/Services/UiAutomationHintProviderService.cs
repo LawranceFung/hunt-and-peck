@@ -113,12 +113,9 @@ namespace HuntAndPeck.Services
             var condition = _automation.CreateAndCondition(enabledControlCondition, conditionOnScreen);
 
             var elementArray = automationElement.FindAll(TreeScope.TreeScope_Descendants, condition);
-            if (elementArray != null)
+            for (var i = 0; i < elementArray.Length; ++i)
             {
-                for (var i = 0; i < elementArray.Length; ++i)
-                {
-                    result.Add(elementArray.GetElement(i));
-                }
+                result.Add(elementArray.GetElement(i));
             }
 
             return result;
