@@ -98,7 +98,6 @@
     <Compile Include="Models\UiAutomationInvokeHint.cs" />
     <Compile Include="Models\UiAutomationSelectHint.cs" />
     <Compile Include="Models\UiAutomationToggleHint.cs" />
-<<<<<<< HEAD
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -109,10 +108,8 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-=======
     <Compile Include="Services\DebugHintProviderService.cs" />
     <Compile Include="Services\GeneralHintProviderService.cs" />
->>>>>>> refactor-HintProviderService-Interface-from-AnsuzPantognestous
     <Compile Include="Services\HintLabelService.cs" />
     <Compile Include="Services\Interfaces\IHintLabelService.cs" />
     <Compile Include="Services\Interfaces\IHintProviderService.cs" />
@@ -121,11 +118,8 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Services\UiAutomationPatternIds.cs" />
-<<<<<<< HEAD
     <Compile Include="Services\UiAutomationHintProviderService.cs" />
     <Compile Include="Settings.cs" />
-=======
->>>>>>> refactor-HintProviderService-Interface-from-AnsuzPantognestous
     <Compile Include="SingleLaunchMutex.cs" />
     <Compile Include="ViewModels\DebugHintViewModel.cs" />
     <Compile Include="ViewModels\DebugOverlayViewModel.cs" />

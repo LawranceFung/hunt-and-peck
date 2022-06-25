@@ -11,7 +11,7 @@ using UIAutomationClient;
 
 namespace HuntAndPeck.Services
 {
-    internal class UiAutomationHintProviderService : IHintProviderService, IDebugHintProviderService
+    public class UiAutomationHintProviderService : DebugHintProviderService, IHintProviderService<Hint>
     {
         private readonly IUIAutomation _automation = new CUIAutomation();
 
@@ -213,6 +213,11 @@ namespace HuntAndPeck.Services
             }
 
             return null;
+        }
+
+        Hint IHintProviderService<Hint>.CreateHint(IntPtr owningWindow, Rect hintBounds, IUIAutomationElement automationElement)
+        {
+            throw new NotImplementedException();
         }
     }
 }

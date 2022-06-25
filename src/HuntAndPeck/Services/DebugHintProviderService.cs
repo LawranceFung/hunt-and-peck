@@ -13,7 +13,7 @@ namespace HuntAndPeck.Services
     /// <summary>
     /// Provide debug hint
     /// </summary>
-    class DebugHintProviderService : IHintProviderService<DebugHint>
+    public class DebugHintProviderService : IHintProviderService<DebugHint>
     {
         public DebugHint CreateHint(IntPtr owningWindow, Rect hintBounds, IUIAutomationElement automationElement)
         {
